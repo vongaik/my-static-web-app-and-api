@@ -1,0 +1,1 @@
+{"ast":null,"code":"export * from './product';","map":{"version":3,"mappings":"AAAA,cAAc,WAAW","names":[],"sourceRoot":"","sources":["C:\\Users\\Vongai\\Vongai Code\\Microsoft courses\\my-static-web-app-and-api\\angular-app\\src\\app\\core\\model\\index.ts"],"sourcesContent":["export * from './product';\r\n"]},"metadata":{},"sourceType":"module","externalDependencies":[]}
