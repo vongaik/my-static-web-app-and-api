@@ -8,3 +8,7 @@ module.exports = async function (context, req) {
     context.res.status(500).send(error);
   }
 };
+
+/* Your function gets the products and returns them with a 
+status code of 200, when successful.
+*/
