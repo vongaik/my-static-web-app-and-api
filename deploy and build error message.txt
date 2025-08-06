@@ -1,0 +1,317 @@
+2m 19s
+Run Azure/static-web-apps-deploy@v1
+  with:
+    azure_static_web_apps_api_token: ***
+    repo_token: ***
+    action: upload
+    app_location: angular-app
+    api_location: api
+    output_location: dist/angular-app
+  env:
+    NPM_CONFIG_LEGACY_PEER_DEPS: true
+/usr/bin/docker run --name b816f7d540e90cc4184f238e69efc44b5a639a_93ff5a --label b816f7 --workdir /github/workspace --rm -e "NPM_CONFIG_LEGACY_PEER_DEPS" -e "INPUT_AZURE_STATIC_WEB_APPS_API_TOKEN" -e "INPUT_REPO_TOKEN" -e "INPUT_ACTION" -e "INPUT_APP_LOCATION" -e "INPUT_API_LOCATION" -e "INPUT_OUTPUT_LOCATION" -e "INPUT_API_BUILD_COMMAND" -e "INPUT_APP_ARTIFACT_LOCATION" -e "INPUT_APP_BUILD_COMMAND" -e "INPUT_ROUTES_LOCATION" -e "INPUT_SKIP_APP_BUILD" -e "INPUT_CONFIG_FILE_LOCATION" -e "INPUT_SKIP_API_BUILD" -e "INPUT_PRODUCTION_BRANCH" -e "INPUT_DEPLOYMENT_ENVIRONMENT" -e "INPUT_IS_STATIC_EXPORT" -e "INPUT_DATA_API_LOCATION" -e "INPUT_GITHUB_ID_TOKEN" -e "HOME" -e "GITHUB_JOB" -e "GITHUB_REF" -e "GITHUB_SHA" -e "GITHUB_REPOSITORY" -e "GITHUB_REPOSITORY_OWNER" -e "GITHUB_REPOSITORY_OWNER_ID" -e "GITHUB_RUN_ID" -e "GITHUB_RUN_NUMBER" -e "GITHUB_RETENTION_DAYS" -e "GITHUB_RUN_ATTEMPT" -e "GITHUB_ACTOR_ID" -e "GITHUB_ACTOR" -e "GITHUB_WORKFLOW" -e "GITHUB_HEAD_REF" -e "GITHUB_BASE_REF" -e "GITHUB_EVENT_NAME" -e "GITHUB_SERVER_URL" -e "GITHUB_API_URL" -e "GITHUB_GRAPHQL_URL" -e "GITHUB_REF_NAME" -e "GITHUB_REF_PROTECTED" -e "GITHUB_REF_TYPE" -e "GITHUB_WORKFLOW_REF" -e "GITHUB_WORKFLOW_SHA" -e "GITHUB_REPOSITORY_ID" -e "GITHUB_TRIGGERING_ACTOR" -e "GITHUB_WORKSPACE" -e "GITHUB_ACTION" -e "GITHUB_EVENT_PATH" -e "GITHUB_ACTION_REPOSITORY" -e "GITHUB_ACTION_REF" -e "GITHUB_PATH" -e "GITHUB_ENV" -e "GITHUB_STEP_SUMMARY" -e "GITHUB_STATE" -e "GITHUB_OUTPUT" -e "RUNNER_OS" -e "RUNNER_ARCH" -e "RUNNER_NAME" -e "RUNNER_ENVIRONMENT" -e "RUNNER_TOOL_CACHE" -e "RUNNER_TEMP" -e "RUNNER_WORKSPACE" -e "ACTIONS_RUNTIME_URL" -e "ACTIONS_RUNTIME_TOKEN" -e "ACTIONS_CACHE_URL" -e "ACTIONS_RESULTS_URL" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/runner/work/_temp/_github_home":"/github/home" -v "/home/runner/work/_temp/_github_workflow":"/github/workflow" -v "/home/runner/work/_temp/_runner_file_commands":"/github/file_commands" -v "/home/runner/work/my-static-web-app-and-api/my-static-web-app-and-api":"/github/workspace" b816f7:d540e90cc4184f238e69efc44b5a639a
+DeploymentId: c61c8f7b-29e5-4317-a771-5ef9e5974d0a
+
+Try to validate location at: '/github/workspace/angular-app'.
+App Directory Location: 'angular-app' was found.
+Try to validate location at: '/github/workspace/swa-db-connections'.
+Looking for event info
+Starting to build app with Oryx
+Azure Static Web Apps utilizes Oryx to build both static applications and Azure Functions. You can find more details on Oryx here: https://github.com/microsoft/Oryx
+---Oryx build logs---
+
+
+Operation performed by Microsoft Oryx, https://github.com/Microsoft/Oryx
+You can report issues at https://github.com/Microsoft/Oryx/issues
+
+Oryx Version: 0.2.20241003.1, Commit: d5352431d933306ccee1be9b5d822c73bf723e9e, ReleaseTagName: 20241003.1
+
+Build Operation ID: a3eeed460db48682
+OS Type           : bullseye
+Image Type        : githubactions
+
+Detecting platforms...
+Detected following platforms:
+  nodejs: 18.20.8
+Version '18.20.8' of platform 'nodejs' is not installed. Generating script to install it...
+Detected the following frameworks: Angular,Typescript
+
+
+Source directory     : /github/workspace/angular-app
+Destination directory: /bin/staticsites/c61c8f7b-29e5-4317-a771-5ef9e5974d0a-swa-oryx/app
+
+
+Downloading and extracting 'nodejs' version '18.20.8' to '/tmp/oryx/platforms/nodejs/18.20.8'...
+Detected image debian flavor: bullseye.
+Downloaded in 1 sec(s).
+Verifying checksum...
+Extracting contents...
+performing sha512 checksum for: nodejs...
+Done in 2 sec(s).
+
+Removing existing manifest file
+Creating directory for command manifest file if it does not exist
+Creating a manifest file...
+Node Build Command Manifest file created.
+
+Using Node version:
+v18.20.8
+
+Using Npm version:
+10.8.2
+
+Running 'npm install'...
+
+npm warn deprecated @npmcli/move-file@2.0.1: This functionality has been moved to @npmcli/fs
+npm warn deprecated sourcemap-codec@1.4.8: Please use @jridgewell/sourcemap-codec instead
+npm warn deprecated acorn-import-assertions@1.9.0: package has been renamed to acorn-import-attributes
+npm warn deprecated abab@2.0.6: Use your platform's native atob() and btoa() methods instead
+npm warn deprecated are-we-there-yet@3.0.1: This package is no longer supported.
+npm warn deprecated npmlog@6.0.2: This package is no longer supported.
+npm warn deprecated read-package-json@6.0.4: This package is no longer supported. Please use @npmcli/package-json instead.
+npm warn deprecated gauge@4.0.4: This package is no longer supported.
+npm warn deprecated @babel/plugin-proposal-private-property-in-object@7.21.11: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-private-property-in-object instead.
+npm warn deprecated @babel/plugin-proposal-optional-chaining@7.21.0: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-optional-chaining instead.
+npm warn deprecated @babel/plugin-proposal-optional-catch-binding@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-optional-catch-binding instead.
+npm warn deprecated @babel/plugin-proposal-numeric-separator@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-numeric-separator instead.
+npm warn deprecated @babel/plugin-proposal-unicode-property-regex@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-unicode-property-regex instead.
+npm warn deprecated @babel/plugin-proposal-private-methods@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-private-methods instead.
+npm warn deprecated @babel/plugin-proposal-nullish-coalescing-operator@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-nullish-coalescing-operator instead.
+npm warn deprecated @babel/plugin-proposal-object-rest-spread@7.20.7: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-object-rest-spread instead.
+npm warn deprecated @babel/plugin-proposal-logical-assignment-operators@7.20.7: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-logical-assignment-operators instead.
+npm warn deprecated @babel/plugin-proposal-json-strings@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-json-strings instead.
+npm warn deprecated @babel/plugin-proposal-export-namespace-from@7.18.9: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-export-namespace-from instead.
+npm warn deprecated @babel/plugin-proposal-class-static-block@7.21.0: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-class-static-block instead.
+npm warn deprecated @babel/plugin-proposal-dynamic-import@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-dynamic-import instead.
+npm warn deprecated @babel/plugin-proposal-class-properties@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-class-properties instead.
+npm warn deprecated @babel/plugin-proposal-async-generator-functions@7.20.7: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-async-generator-functions instead.
+npm warn deprecated glob@8.1.0: Glob versions prior to v9 are no longer supported
+npm warn deprecated glob@8.1.0: Glob versions prior to v9 are no longer supported
+npm warn deprecated glob@8.1.0: Glob versions prior to v9 are no longer supported
+
+added 980 packages, and audited 981 packages in 28s
+
+115 packages are looking for funding
+  run `npm fund` for details
+
+11 vulnerabilities (1 low, 5 moderate, 4 high, 1 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+Running 'npm run build'...
+
+
+> angular-app@0.0.0 build
+> ng build
+
+One or more browsers which are configured in the project's Browserslist configuration will be ignored as ES5 output is not supported by the Angular CLI.
+Ignored browsers: kaios 2.5, op_mini all
+- Generating browser application bundles (phase: setup)...
+    TypeScript compiler options "target" and "useDefineForClassFields" are set to "ES2022" and "false" respectively by the Angular CLI. To control ECMA version and features use the Browerslist configuration. For more information, see https://angular.io/guide/build#configuring-browser-compatibility
+    NOTE: You can set the "target" to "ES2022" in the project's tsconfig to remove this warning.
+Processing legacy "View Engine" libraries:
+- @ngrx/store [es2015/esm2015] (git+https://github.com/ngrx/platform.git)
+- @ngrx/entity [es2015/esm2015] (https://github.com/ngrx/platform.git)
+- @ngrx/effects [es2015/esm2015] (https://github.com/ngrx/platform.git)
+- @ngrx/store-devtools [es2015/esm2015] (git+https://github.com/ngrx/platform.git)
+- @ngrx/data [es2015/esm2015] (https://github.com/ngrx/platform.git)
+Encourage the library authors to publish an Ivy distribution.
+✔ Browser application bundle generation complete.
+✔ Browser application bundle generation complete.
+- Copying assets...
+✔ Copying assets complete.
+- Generating index html...
+✔ Index html generation complete.
+
+Initial Chunk Files                    | Names                    |  Raw Size
+vendor.js                              | vendor                   |   2.34 MB |
+styles.css                             | styles                   | 725.03 kB |
+polyfills.js                           | polyfills                | 112.19 kB |
+main.js                                | main                     |  29.14 kB |
+runtime.js                             | runtime                  |  12.45 kB |
+
+| Initial Total            |   3.20 MB
+
+Lazy Chunk Files                       | Names                    |  Raw Size
+src_app_products_products_module_ts.js | products-products-module | 334.89 kB |
+
+Build at: 2025-08-04T09:26:20.576Z - Hash: d57d923e2d5a9f27 - Time: 15547ms
+
+./node_modules/bulma/bulma.sass - Warning: Module Warning (from ./node_modules/sass-loader/dist/cjs.js):
+Deprecation Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($button-padding-horizontal, 4) or calc($button-padding-horizontal / 4)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+node_modules/bulma/sass/elements/button.sass 88:31  @import
+node_modules/bulma/sass/elements/_all.sass 5:9      @import
+node_modules/bulma/bulma.sass 5:9                   root stylesheet
+
+
+./node_modules/bulma/bulma.sass - Warning: Module Warning (from ./node_modules/sass-loader/dist/cjs.js):
+Deprecation Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($value + 0.055, 1.055) or calc(($value + 0.055) / 1.055)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+node_modules/bulma/sass/utilities/functions.sass 74:15          colorLuminance()
+node_modules/bulma/sass/utilities/functions.sass 80:8           findColorInvert()
+node_modules/bulma/sass/utilities/derived-variables.sass 16:17  @import
+node_modules/bulma/sass/utilities/_all.sass 6:9                 @import
+node_modules/bulma/bulma.sass 3:9                               root stylesheet
+
+
+./node_modules/bulma/bulma.sass - Warning: Module Warning (from ./node_modules/sass-loader/dist/cjs.js):
+Deprecation Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($value, 12.92) or calc($value / 12.92)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+node_modules/bulma/sass/utilities/functions.sass 72:15          colorLuminance()
+node_modules/bulma/sass/utilities/functions.sass 80:8           findColorInvert()
+node_modules/bulma/sass/utilities/derived-variables.sass 19:20  @import
+node_modules/bulma/sass/utilities/_all.sass 6:9                 @import
+node_modules/bulma/bulma.sass 3:9                               root stylesheet
+
+
+./node_modules/bulma/bulma.sass - Warning: Module Warning (from ./node_modules/sass-loader/dist/cjs.js):
+Deprecation Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div($value, 255) or calc($value / 255)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+node_modules/bulma/sass/utilities/functions.sass 70:13          colorLuminance()
+node_modules/bulma/sass/utilities/functions.sass 80:8           findColorInvert()
+node_modules/bulma/sass/utilities/derived-variables.sass 16:17  @import
+node_modules/bulma/sass/utilities/_all.sass 6:9                 @import
+node_modules/bulma/bulma.sass 3:9                               root stylesheet
+
+
+./node_modules/bulma/bulma.sass - Warning: Module Warning (from ./node_modules/sass-loader/dist/cjs.js):
+Deprecation Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+
+Recommendation: math.div(-1, 2) or calc(-1 / 2)
+
+More info and automated migrator: https://sass-lang.com/d/slash-div
+
+node_modules/bulma/sass/elements/button.sass 87:38  @import
+node_modules/bulma/sass/elements/_all.sass 5:9      @import
+node_modules/bulma/bulma.sass 5:9                   root stylesheet
+
+
+./node_modules/bulma/bulma.sass - Warning: Module Warning (from ./node_modules/sass-loader/dist/cjs.js):
+20 repetitive deprecation warnings omitted.
+Run in verbose mode to see all warnings.
+
+null
+
+
+Preparing output...
+
+Copying files to destination directory '/bin/staticsites/c61c8f7b-29e5-4317-a771-5ef9e5974d0a-swa-oryx/app'...
+Done in 4 sec(s).
+
+Removing existing manifest file
+Creating a manifest file...
+Manifest file created.
+Copying .ostype to manifest output directory.
+
+Done in 52 sec(s).
+
+
+---End of Oryx build logs---
+Try to validate location at: '/bin/staticsites/c61c8f7b-29e5-4317-a771-5ef9e5974d0a-swa-oryx/app/dist/angular-app'.
+Finished building app with Oryx
+Using 'staticwebapp.config.json' file for configuration information, 'routes.json' will be ignored.
+Copying 'staticwebapp.config.json' to build output
+Try to validate location at: '/github/workspace/api'.
+Api Directory Location: 'api' was found.
+Starting to build function app with Oryx
+---Oryx build logs---
+
+
+Operation performed by Microsoft Oryx, https://github.com/Microsoft/Oryx
+You can report issues at https://github.com/Microsoft/Oryx/issues
+
+Oryx Version: 0.2.20241003.1, Commit: d5352431d933306ccee1be9b5d822c73bf723e9e, ReleaseTagName: 20241003.1
+
+Build Operation ID: a5915a15c43c73d2
+OS Type           : bullseye
+Image Type        : githubactions
+
+Detecting platforms...
+Detected following platforms:
+  nodejs: 18.20.8
+
+
+Source directory     : /github/workspace/api
+Destination directory: /bin/staticsites/c61c8f7b-29e5-4317-a771-5ef9e5974d0a-swa-oryx/api
+
+Removing existing manifest file
+Creating directory for command manifest file if it does not exist
+Creating a manifest file...
+Node Build Command Manifest file created.
+
+Using Node version:
+v18.20.8
+
+Using Npm version:
+10.8.2
+
+Running 'npm install'...
+
+
+added 5 packages, and audited 6 packages in 774ms
+
+3 vulnerabilities (2 low, 1 moderate)
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+
+Copy '/github/workspace/api/node_modules' with all dependencies to '/github/workspace/api/.oryx_all_node_modules'...
+Preparing output...
+
+Copying files to destination directory '/bin/staticsites/c61c8f7b-29e5-4317-a771-5ef9e5974d0a-swa-oryx/api'...
+Done in 0 sec(s).
+
+Removing existing manifest file
+Creating a manifest file...
+Manifest file created.
+Copying .ostype to manifest output directory.
+
+Done in 2 sec(s).
+
+
+---End of Oryx build logs---
+Function Runtime Information. OS: linux, Functions Runtime: ~4, node version: 18
+Finished building function app with Oryx
+Zipping Api Artifacts
+Done Zipping Api Artifacts
+Zipping App Artifacts
+Done Zipping App Artifacts
+Uploading build artifacts.
+Finished Upload. Polling on deployment.
+Status: InProgress. Time: 0.2440886(s)
+Status: InProgress. Time: 15.5424659(s)
+Status: InProgress. Time: 30.8138102(s)
+Status: InProgress. Time: 46.0505818(s)
+Status: InProgress. Time: 61.2810474(s)
+Status: Failed. Time: 76.5193353(s)
+Deployment Failed :(
+Deployment Failure Reason: Failed to deploy the Azure Functions.
+
+For further information, please visit the Azure Static Web Apps documentation at https://docs.microsoft.com/en-us/azure/static-web-apps/
+If you believe this behavior is unexpected, please raise a GitHub issue at https://github.com/azure/static-web-apps/issues/
+Exiting
